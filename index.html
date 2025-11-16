@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wellness Wisdom by Jifri CK | IndusViva Wellness Products</title>
     <meta name="description" content="Discover premium IndusViva wellness products including I-Pulse, I-Care, I-Coffee Black, I-Coffee Creamer, I-Glow, and I-Slim. Empower your wellness journey with nature-inspired solutions.">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -32,6 +32,7 @@
 
         html {
             scroll-behavior: smooth;
+            scroll-padding-top: 80px; /* Account for fixed header */
         }
 
         body {
@@ -210,7 +211,7 @@
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, var(--soft-green) 0%, rgba(255,255,255,1) 100%);
-            padding: 150px 0 100px;
+            padding: 180px 0 100px; /* Increased top padding to account for header */
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -251,7 +252,7 @@
 
         /* Products Section */
         .section {
-            padding: 80px 0;
+            padding: 100px 0 80px; /* Increased top padding for all sections */
         }
 
         .section-title {
@@ -597,7 +598,7 @@
         /* Business Opportunity Page Styles */
         .opportunity-hero {
             background: linear-gradient(135deg, var(--light-gold) 0%, var(--soft-green) 100%);
-            padding: 150px 0 80px;
+            padding: 180px 0 80px; /* Increased top padding */
             text-align: center;
         }
 
@@ -691,7 +692,7 @@
 
         .testimonial-section {
             background-color: var(--light-gray);
-            padding: 60px 0;
+            padding: 80px 0;
             margin: 60px 0;
         }
 
@@ -766,7 +767,7 @@
         .cta-section {
             background: linear-gradient(135deg, var(--primary-green), var(--light-green));
             color: var(--white);
-            padding: 80px 0;
+            padding: 100px 0;
             text-align: center;
         }
 
@@ -791,7 +792,7 @@
         footer {
             background-color: var(--primary-green);
             color: var(--white);
-            padding: 40px 0 20px;
+            padding: 60px 0 20px;
         }
 
         .footer-content {
@@ -855,7 +856,7 @@
             }
             
             .hero {
-                padding: 120px 0 80px;
+                padding: 150px 0 80px;
             }
             
             .hero h1 {
@@ -863,7 +864,7 @@
             }
             
             .section {
-                padding: 60px 0;
+                padding: 80px 0 60px;
             }
             
             .mobile-menu-btn {
@@ -908,9 +909,7 @@
                 flex-direction: column;
                 align-items: center;
             }
-        }
-
-        @media (max-width: 576px) {
+            
             .product-detail, .contact-form-container {
                 padding: 25px;
             }
@@ -920,11 +919,51 @@
             }
             
             .opportunity-hero {
-                padding: 130px 0 60px;
+                padding: 150px 0 60px;
             }
             
             .opportunity-hero h1 {
                 font-size: 1.8rem;
+            }
+            
+            .product-detail-image, .owner-image, .company-image {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+            
+            .product-detail, .contact-form-container {
+                padding: 20px;
+            }
+            
+            .mission-statement {
+                padding: 20px;
+            }
+            
+            .opportunity-hero h1 {
+                font-size: 1.6rem;
+            }
+            
+            .product-detail-image, .owner-image, .company-image {
+                height: 250px;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                gap: 10px;
             }
         }
     </style>
@@ -934,7 +973,6 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <!-- Updated with your actual logo -->
                 <img src="https://i.pinimg.com/736x/b9/90/81/b99081c2059a658f0af0ee7f7ce32928.jpg" alt="Wellness Wisdom Logo" class="logo-img">
                 <div class="logo-text">Wellness <span>Wisdom</span></div>
             </div>
